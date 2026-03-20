@@ -11,9 +11,43 @@
     combos {
         compatible = "zmk,combos";
 
-        Backspace {
+        combo_backspace {
             bindings = <&kp BACKSPACE>;
             key-positions = <9 8>;
+        };
+        combo_esc {
+            bindings = <&kp ESCAPE>;
+            key-positions = <0 1>;
+        };
+
+        combo_tab {
+            bindings = <&kp TAB>;
+            key-positions = <10 11>;
+        };
+
+        combo_ctrl_z {
+            bindings = <&kp LC(Z)>;
+            key-positions = <21 20>;
+        };
+
+        combo_ctrl_x {
+            bindings = <&kp LC(Z)>;
+            key-positions = <21 22>;
+        };
+
+        combo_ctrl_c {
+            bindings = <&kp LC(Z)>;
+            key-positions = <22 23>;
+        };
+
+        combo_ctrl_v {
+            bindings = <&kp LC(Z)>;
+            key-positions = <23 24>;
+        };
+
+        combo_ctrl_a {
+            bindings = <&kp LC(Z)>;
+            key-positions = <10 21>;
         };
     };
 
