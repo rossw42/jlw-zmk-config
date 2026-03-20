@@ -15,6 +15,7 @@
             bindings = <&kp BACKSPACE>;
             key-positions = <9 8>;
         };
+
         combo_esc {
             bindings = <&kp ESCAPE>;
             key-positions = <0 1>;
@@ -31,12 +32,12 @@
         };
 
         combo_ctrl_x {
-            bindings = <&kp LC(Z)>;
+            bindings = <&kp LC(X)>;
             key-positions = <21 22>;
         };
 
         combo_ctrl_c {
-            bindings = <&kp LC(Z)>;
+            bindings = <&kp LC(C)>;
             key-positions = <22 23>;
         };
 
@@ -47,7 +48,7 @@
 
         combo_ctrl_a {
             bindings = <&kp LC(Z)>;
-            key-positions = <10 21>;
+            key-positions = <10 11>;
         };
     };
 
