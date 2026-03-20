@@ -71,13 +71,13 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮                      ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│  Q       │  W       │  F       │  P       │  B       │                      │  J       │  L       │  U       │  Y       │ ' "      │
-            &kp Q      &kp W      &kp F      &kp P      &kp B                             &kp J      &kp L      &kp U      &kp Y      &as SQT
+            &kp Q      &kp W      &kp F      &kp P      &kp B                             &kp J      &kp L      &kp U      &kp Y      &kp SQT
         //├──────────┼──────────┼──────────┼──────────┼──────────┤                      ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  A       │  R       │  S       │  T       │  G       │                      │  M       │  N       │  E       │  I       │ O        │
-            HRML(A,     R,         S)         &kp T     &kp G                             &kp M      &kp N      HRMR(E,     I,        O)
+            &kp Q      &kp Q        &kp Q      &kp T     &kp G                             &kp M      &kp N      &kp Q      &kp Q       &kp Q 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤                      ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  Z       │  X       │  C       │  D       │  V       │                      │  K       │  H       │ , <      │ . >      │ / ?      │
-            &kp Z      &kp X      &kp C      &kp D      &kp V                             &kp K      &kp H      &as COMMA  &as DOT    &as FSLH
+            &kp Z      &kp X      &kp C      &kp D      &kp V                             &kp K      &kp H      &kp COMMA  &kp DOT    &kp FSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤                      ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                             &lt 3 TAB  &mt LSHIFT BSPC   &kp C_MUTE      &lt 1 SPACE &lt 2 RET
         //                                 ╰──────────┴──────────╯                      ╰──────────┴──────────╯
@@ -89,13 +89,13 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮      ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│  ` ~     │          │          │          │          │      │  \ |     │  - _     │  = +     │  [       │  ]       │
-            &as GRAVE  &none      &none      &none      &none             &as BSLH   &as MINUS  &as EQUAL  &as LBKT   &as RBKT
+            &kp GRAVE  &none      &none      &none      &none             &kp BSLH   &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT
         //├──────────┼──────────┼──────────┼──────────┼──────────┤      ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  1 !     │  2 @     │  3 #     │  4 $     │  5 %     │      │  6 ^     │  7 &     │  8 *     │  9 (     │  0 )     │
-            &as N1     &as N2     &as N3     &as N4     &as N5            &as N6     &as N7     &as N8     &as N9     &as N0
+            &kp N1     &kp N2     &kp N3     &kp N4     &kp N5            &kp N6     &kp N7     &kp N8     &kp N9     &kp N0
         //├──────────┼──────────┼──────────┼──────────┼──────────┤      ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │      │          │          │          │          │          │
-            &none      &none      &none      &none      &none             &none      &none      &trans     &trans     &as SEMI
+            &none      &none      &none      &none      &none             &none      &none      &trans     &trans     &kp SEMI
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤      ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &trans    &trans  &trans     &trans
         //                                 ╰──────────┴──────────╯      ╰──────────┴──────────╯
@@ -110,7 +110,7 @@
             &bt BT_CLR  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &none      &none      &none      &none      &kp F11    &kp F12
         //├──────────┼──────────┼──────────┼──────────┼──────────┤      ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  F1      │  F2      │  F3      │  F4      │  F5      │      │  F6      │  F7      │  F8      │  F9      │  F10     │
-            HRML(F1,    F2,        F3)       &kp F4     &kp F5            &kp F6     &kp F7     HRMR(F8,    F9,        F10)
+            &kp N1     &kp N2     &kp N3        &kp F4     &kp F5            &kp F6     &kp F7     &kp N1     &kp N2     &kp N3 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤      ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │      │          │          │          │          │          │
             &none      &none      &none      &none      &none             &none      &none      &none      &none      &none
@@ -125,7 +125,7 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮      ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│          │          │          │          │          │      │  HOME    │          │  UP      │          │  PG_UP   │
-            &none      &none  &kp LS(LG(N4)) &kp LS(LG(S)) &none         &kp HOME   &none      &kp UP     &none      &kp PG_UP
+            &none      &none  &kp N3  &kp N3  &none         &kp HOME   &none      &kp UP     &none      &kp PG_UP
         //├──────────┼──────────┼──────────┼──────────┼──────────┤      ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  LGUI    │  LALT    │  LCTRL   │          │          │      │  END     │  LEFT    │  DOWN    │  RIGHT   │  PG_DN   │
             &kp LGUI   &kp LALT   &kp LCTRL  &none      &none             &kp END    &kp LEFT   &kp DOWN  &kp RIGHT  &kp PG_DN
