@@ -42,13 +42,13 @@
         };
 
         combo_ctrl_v {
-            bindings = <&kp LC(Z)>;
+            bindings = <&kp LC(V)>;
             key-positions = <23 24>;
         };
 
         combo_ctrl_a {
-            bindings = <&kp LC(Z)>;
-            key-positions = <10 11>;
+            bindings = <&kp LC(A)>;
+            key-positions = <10 21>;
         };
     };
 
