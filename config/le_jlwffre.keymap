@@ -48,20 +48,8 @@
         };
 
         combo_ctrl_a {
-            bindings = <&kp LC(A)>;
-            key-positions = <10 21>;
-        };
-
-        Function_layer2 {
-            bindings = <&mo 2>;
-            key-positions = <1 8>;
-        };
-
-        combo_soft_off {
-            timeout-ms = <50>;
-            key-positions = <0 9>;
-            layers = <2>;
-            bindings = <&soft_off>;
+            bindings = <&kp LC(Z)>;
+            key-positions = <10 11>;
         };
     };
 
