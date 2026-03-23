@@ -48,8 +48,13 @@
         };
 
         combo_ctrl_a {
-            bindings = <&kp LC(Z)>;
-            key-positions = <10 11>;
+            bindings = <&kp LC(A)>;
+            key-positions = <10 21>;
+        };
+
+        combo_fn_layer {
+            bindings = <&mo 2>;
+            key-positions = <0 9>;
         };
     };
 

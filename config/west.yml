@@ -2,15 +2,16 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: jlw
-      url-base: https://github.com/josh-l-wang
+    - name: jlw # You can name this whatever you like; just make sure the "remote" below matches.
+      url-base: https://github.com/josh-l-wang/
   projects:
     - name: zmk
       remote: zmkfirmware
       revision: v0.3
       import: app/west.yml
-    - name: zmk-jlw-keyboards
+    # Add the name of the repository as a project.
+    - name: zmk-config-jlw
       remote: jlw
-      revision: main
+      revision: main # This is the name of the branch you want to use.
   self:
     path: config
