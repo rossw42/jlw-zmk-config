@@ -56,6 +56,11 @@
             bindings = <&mo 2>;
             key-positions = <0 9>;
         };
+
+        Shift {
+            bindings = <&kp LEFT_SHIFT>;
+            key-positions = <31 32>;
+        };
     };
 
     keymap {
@@ -63,10 +68,10 @@
 
         base {
             bindings = <
-&kp Q  &kp W  &kp E      &kp R  &kp T    &kp Y  &kp U      &kp I      &kp O    &kp P
-&kp A  &kp S  &kp D      &kp F  &kp G    &kp H  &kp J      &kp K      &kp L    &kp SQT
-&kp Z  &kp X  &kp C      &kp V  &kp B    &kp N  &kp M      &kp COMMA  &kp DOT  &kp FSLH
-              &kp LCTRL         &kp RET         &kp SPACE  &lt 1 SPACE
+&kp Q  &kp W  &kp E      &kp R  &kp T      &kp Y  &kp U        &kp I      &kp O    &kp P
+&kp A  &kp S  &kp D      &kp F  &kp G      &kp H  &kp J        &kp K      &kp L    &kp SQT
+&kp Z  &kp X  &kp C      &kp V  &kp B      &kp N  &kp M        &kp COMMA  &kp DOT  &kp FSLH
+              &kp LCTRL         &lt 2 RET         &lt 1 SPACE  &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -83,10 +88,10 @@
 
         functions {
             bindings = <
-&kp F1  &kp F2  &kp F3  &kp F4  &kp F5     &kp F6       &kp F7       &kp F8       &kp F9  &kp F10
-&trans  &trans  &trans  &trans  &trans     &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &trans  &bt BT_CLR
-&trans  &trans  &trans  &trans  &soft_off  &trans       &trans       &trans       &trans  &trans
-                &trans          &trans                  &trans       &trans
+&kp F1  &kp F2  &kp F3  &kp F4  &kp F5     &kp F6        &kp F7        &kp F8        &kp F9  &kp F10
+&trans  &trans  &trans  &trans  &trans     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans  &bt BT_CLR
+&trans  &trans  &trans  &trans  &soft_off  &trans        &trans        &trans        &trans  &trans
+                &trans          &trans                   &trans        &trans
             >;
         };
     };
