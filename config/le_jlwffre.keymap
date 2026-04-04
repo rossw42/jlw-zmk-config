@@ -62,6 +62,11 @@
             bindings = <&kp LEFT_SHIFT>;
             key-positions = <31 32>;
         };
+
+        layer2 {
+            bindings = <&mo 2>;
+            key-positions = <3 4>;
+        };
     };
 
     keymap {
